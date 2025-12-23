@@ -1,0 +1,185 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "VitalSync AI",
+      "archetype": "Organic & Earthy (Trust, Growth) + Electric Twist (AI)",
+      "vibe": "A sanctuary of health data. Calm, precise, yet actively intelligent.",
+      "principles": [
+        "Fusion: Medical precision (Swiss Grid) x Botanical warmth (Organic colors).",
+        "Emotion: Every interaction should lower the user's heart rate.",
+        "Content: Data is the hero. Use 'Control Room' density for dashboards.",
+        "Contrast: High contrast text for accessibility (WCAG AA/AAA)."
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "IBM Plex Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Manrope:wght@300;400;600;700;800&display=swap"
+      ],
+      "usage": {
+        "h1": "font-heading font-extrabold tracking-tight text-5xl md:text-7xl",
+        "h2": "font-heading font-bold tracking-tight text-3xl md:text-5xl",
+        "h3": "font-heading font-semibold tracking-tight text-2xl",
+        "body": "font-body text-base leading-relaxed text-muted-foreground",
+        "label": "font-mono text-xs uppercase tracking-widest text-muted-foreground/80"
+      }
+    },
+    "colors": {
+      "palette": {
+        "base": {
+          "light": "40 20% 98%",
+          "dark": "150 40% 5%"
+        },
+        "primary": {
+          "name": "Deep Forest",
+          "value": "145 45% 20%",
+          "usage": "Main CTAs, Active States, Brand Headers"
+        },
+        "secondary": {
+          "name": "Sage Mist",
+          "value": "145 20% 90%",
+          "usage": "Backgrounds, Secondary Buttons"
+        },
+        "accent": {
+          "name": "Electric Clay",
+          "value": "15 80% 60%",
+          "usage": "Alerts, Highlights, 'Call Doctor' buttons"
+        },
+        "ai_glow": {
+          "name": "Holographic Blue",
+          "value": "240 80% 70%",
+          "usage": "AI Chatbot accents, gradients, active borders"
+        }
+      },
+      "tailwind_config_extension": {
+        "colors": {
+          "border": "hsl(var(--border))",
+          "input": "hsl(var(--input))",
+          "ring": "hsl(var(--ring))",
+          "background": "hsl(var(--background))",
+          "foreground": "hsl(var(--foreground))",
+          "primary": {
+            "DEFAULT": "hsl(var(--primary))",
+            "foreground": "hsl(var(--primary-foreground))"
+          },
+          "secondary": {
+            "DEFAULT": "hsl(var(--secondary))",
+            "foreground": "hsl(var(--secondary-foreground))"
+          },
+          "destructive": {
+            "DEFAULT": "hsl(var(--destructive))",
+            "foreground": "hsl(var(--destructive-foreground))"
+          },
+          "muted": {
+            "DEFAULT": "hsl(var(--muted))",
+            "foreground": "hsl(var(--muted-foreground))"
+          },
+          "accent": {
+            "DEFAULT": "hsl(var(--accent))",
+            "foreground": "hsl(var(--accent-foreground))"
+          },
+          "popover": {
+            "DEFAULT": "hsl(var(--popover))",
+            "foreground": "hsl(var(--popover-foreground))"
+          },
+          "card": {
+            "DEFAULT": "hsl(var(--card))",
+            "foreground": "hsl(var(--card-foreground))"
+          }
+        },
+        "fontFamily": {
+          "heading": ["Manrope", "sans-serif"],
+          "body": ["IBM Plex Sans", "sans-serif"],
+          "mono": ["JetBrains Mono", "monospace"]
+        }
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "backdrop-blur-xl bg-white/70 border border-white/20 shadow-sm",
+      "tracing_beam": "relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-primary/20 before:to-transparent before:animate-shimmer",
+      "noise_texture": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+    },
+    "layout_strategies": {
+      "marketing": {
+        "grid": "Tetris Grid (Mode A)",
+        "description": "Asymmetrical, overlapping, artistic. Use col-span-full for hero, col-span-4 for features.",
+        "spacing": "gap-8 md:gap-12 p-8 md:p-12"
+      },
+      "dashboard": {
+        "grid": "Control Room Grid (Mode B)",
+        "description": "Dense, data-heavy. Use col-span-1 for metrics, col-span-2/3 for charts.",
+        "spacing": "gap-4 p-6"
+      }
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero",
+        "url": "https://images.unsplash.com/photo-1623261887327-c1d2d2ad0137?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Doctor consulting patient, warm lighting, trust-building.",
+        "usage": "Landing Page Hero Section"
+      },
+      {
+        "category": "ai_background",
+        "url": "https://images.unsplash.com/photo-1682684123154-c21854fd90cf?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Abstract minimalist medical tech, clean blue/white.",
+        "usage": "AI Chatbot Background / Feature Section"
+      },
+      {
+        "category": "wellness",
+        "url": "https://images.unsplash.com/photo-1758274536471-912e9d20d4fc?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Women doing yoga outdoors, nature, health.",
+        "usage": "Lifestyle Recommendations Widget"
+      },
+      {
+        "category": "medical_abstract",
+        "url": "https://images.unsplash.com/photo-1558747902-72d939d74f05?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Minimalist medical object, clean.",
+        "usage": "Medical Records Header"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px, rounded corners."
+    }
+  },
+  "components": {
+    "library": "shadcn/ui",
+    "customization_rules": [
+      "Radius: 0.5rem (Rounded-lg) - Soft but precise.",
+      "Shadows: shadow-sm for cards, shadow-xl for floating elements.",
+      "Borders: 1px solid border-border/60 (Subtle).",
+      "Inputs: bg-secondary/30 border-transparent focus:border-primary focus:ring-0"
+    ],
+    "specific_components": {
+      "buttons": "h-10 px-6 font-medium tracking-wide transition-all hover:scale-[1.02] active:scale-[0.98]",
+      "cards": "bg-card text-card-foreground border border-border/50 shadow-sm hover:shadow-md transition-all duration-300",
+      "charts": "Use Recharts via Shadcn Charts. Colors: chart-1 (Forest), chart-2 (Sage), chart-3 (Clay)."
+    }
+  },
+  "pages_structure": {
+    "landing": {
+      "sections": ["Hero (Split Layout)", "Features (Tetris Grid)", "AI Demo (Interactive)", "Testimonials (Marquee)", "Footer"]
+    },
+    "dashboard": {
+      "layout": "Sidebar + Topbar + Main Content Area",
+      "widgets": ["Vitals Summary (Row 1)", "Upcoming Appointments (Row 2 Col 1)", "Health Trends Chart (Row 2 Col 2-3)", "AI Insights (Floating/Sidebar)"]
+    }
+  },
+  "universal_guidelines": [
+    "DO NOT use 'Inter' for headings. Use 'Manrope'.",
+    "DO NOT use gradients for text unless it's the AI brand name.",
+    "DO NOT center text by default. Left align for readability.",
+    "ALWAYS add 'data-testid' to interactive elements.",
+    "Use 'sonner' for toasts.",
+    "Use 'lucide-react' for icons.",
+    "Ensure WCAG AA contrast ratios.",
+    "Add micro-interactions (hover, focus, active) to EVERYTHING."
+  ],
+  "instructions_to_main_agent": "You are building a high-trust, calming healthcare portal. Follow the 'Organic & Earthy' theme. Use the provided image URLs for specific sections. Implement the 'Control Room' grid for the dashboard to handle data density without clutter. Prioritize the 'Manrope' font for all headings to give it a modern, human feel. Use Shadcn components but override the styling to match the 'Soft Utility' aesthetic defined in the colors section."
+}
